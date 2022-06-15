@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 import styled from '@emotion/styled'
+import { prefix } from '../utils/prefix'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -18,7 +19,7 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const spaceFrogzImg = `/images/spacefrogz${useColorModeValue('', '-dark')}.png`
+  const spaceFrogzImg = `${prefix}/images/spacefrogz${useColorModeValue('', '-dark')}.png`
   return (
     <Link href='/'>
       <a>
