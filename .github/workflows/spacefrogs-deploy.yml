@@ -30,6 +30,8 @@ jobs:
       env:
         NEXT_PUBLIC_BASE_PATH: /spacefrogz-homepage
     - run: npm run export
+      env:
+        NEXT_PUBLIC_BASE_PATH: /spacefrogz-homepage
     - run: touch ./out/.nojekyll
     
     - name: Deploy 🚀

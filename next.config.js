@@ -4,6 +4,6 @@ module.exports = {
     reactStrictMode: true,
     images: {
         loader: 'akamai',
-        path: process.env.NEXT_PUBLIC_BASE_PATH || '',
+        path: '',
     },
 }
