@@ -11,7 +11,7 @@ const Page = () => {
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Greetings, I'm a developer based in Cluj-Napoca, România!
+        Greetings, I&apos;m a developer based in Cluj-Napoca, România!
       </Box>
 
       <Box display={{ md: 'flex' }}>
