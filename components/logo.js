@@ -19,12 +19,12 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const spaceFrogzImg = `${imagePrefix}/images/spacefrogz${useColorModeValue('', '-dark')}.png`
+  const spaceFrogzImg = `/images/spacefrogz${useColorModeValue('', '-dark')}.png`
   return (
     <Link href='/'>
       <a>
         <LogoBox>
-          <Image src={spaceFrogzImg} width={20} height={20} alt='logo' />
+          <Image src={imagePrefix + spaceFrogzImg} width={20} height={20} alt='logo' />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c'
