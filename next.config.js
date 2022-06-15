@@ -1,6 +1,6 @@
 module.exports = {
-    basePath: '/spacefrogz-homepage',
-    assetPrefix: '/spacefrogz-homepage',
+    basePath: process.env.NEXT_PUBLIC_BASE_PATH,
+    assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
     reactStrictMode: true,
     images: {
         loader: 'akamai',
