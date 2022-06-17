@@ -1,4 +1,4 @@
-import { Container, Box, Heading } from '@chakra-ui/react'
+import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react'
 import SFRoundedSimpleCard from '../components/sf-rounded-simple-card';
 import GreetingsBox from '../components/greetings-box';
 import { darkThemeGradient, lightThemeGradient } from '../utils/colors';
