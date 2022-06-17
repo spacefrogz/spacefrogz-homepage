@@ -1,6 +1,7 @@
 import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react'
 import SFRoundedSimpleCard from '../components/sf-rounded-simple-card';
 import GreetingsBox from '../components/greetings-box';
+import { darkThemeGradient, lightThemeGradient } from '../utils/colors';
 
 const Page = () => {
   return (
@@ -13,7 +14,7 @@ const Page = () => {
         <SFRoundedSimpleCard mb={6} p={3} children="🚧" />
       </Box>
 
-      <SFRoundedSimpleCard mb={6} p={3}>
+      <SFRoundedSimpleCard mb={6} p={3} bgGradient={useColorModeValue(lightThemeGradient, darkThemeGradient)}>
         <Box flexGrow={1}>
           <Heading as='h2' variant='page-title'>
             🧑🏻‍🚀
