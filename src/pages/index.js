@@ -1,28 +1,27 @@
 import { Container, Box, Heading, useColorModeValue } from '@chakra-ui/react'
+import SFRoundedSimpleCard from '../components/sf-rounded-simple-card';
+import GreetingsBox from '../components/greetings-box';
 
 const Page = () => {
   return (
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Greetings, I&apos;m a developer based in Cluj-Napoca, România!
+      <GreetingsBox />
+
+      <Box display="flex" flexDirection="row" justifyContent="space-between">
+        <SFRoundedSimpleCard mb={6} p={3} children="🚧" />
+        <SFRoundedSimpleCard mb={6} p={3} children="this webpage is under construction" />
+        <SFRoundedSimpleCard mb={6} p={3} children="🚧" />
       </Box>
 
-      <Box display={{ md: 'flex' }}>
+      <SFRoundedSimpleCard mb={6} p={3}>
         <Box flexGrow={1}>
           <Heading as='h2' variant='page-title'>
-            Crișan Horea
+            🧑🏻‍🚀
           </Heading>
-          <p>Digital creator under Space Frogz (Mobile Apps / Photography / Design)</p>
+          <p>Digital creator under Space Frogz</p>
         </Box>
+      </SFRoundedSimpleCard>
 
-      </Box>
     </Container>
   )
 }
